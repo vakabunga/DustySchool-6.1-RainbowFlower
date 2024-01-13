@@ -8,6 +8,9 @@
 
 Также, добавьте дополнительную кнопку, при клике на которую выбранный цвет будет выводиться в интерфейс (можно что-либо красить этим цветом) или консоль
 
-### GitPages
+### How to check
 
-https://vakabunga.github.io/DustySchool-6.1-RainbowFlower/
+1. Clone
+2. npm install
+3. npm start
+4. go to http://localhost:8080
