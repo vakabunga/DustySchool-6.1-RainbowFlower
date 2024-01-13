@@ -1,0 +1,36 @@
+{
+  "name": "dustyschool-6.1-rainbowflower",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@babel/cli": "^7.23.4",
+    "@babel/core": "^7.23.7",
+    "@babel/preset-env": "^7.23.8",
+    "@eastdesire/jscolor": "^2.5.2",
+    "stylelint-order": "^6.0.4",
+    "stylelint-semantic-groups": "^1.2.1"
+  },
+  "devDependencies": {
+    "@shopify/stylelint-plugin": "^13.0.0",
+    "eslint": "^8.56.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "http-server": "^14.1.1",
+    "stylelint": "^16.1.0",
+    "stylelint-config-standard": "^36.0.0"
+  },
+  "scripts": {
+    "build": "rm -rf dist && cp -Ra ./src/. dist && babel src -d dist",
+    "lint": "eslint ./src && stylelint './src/**/*.css'",
+    "lint:fix": "eslint ./src --fix && stylelint './src/**/*.css' --fix",
+    "start": "http-server ./dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

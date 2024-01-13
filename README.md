@@ -12,5 +12,6 @@
 
 1. Clone
 2. npm install
-3. npm start
-4. go to http://localhost:8080
+3. npm build
+4. npm start
+5. go to http://localhost:8080

@@ -14,5 +14,5 @@ appContainer.appendChild(colorPickerInput);
 
 colorPickerInput.addEventListener('input', (event) => {
   const pickedColor = event.target.value;
-    appHeader.style.color = pickedColor
+  appHeader.style.color = pickedColor;
 });
