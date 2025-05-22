@@ -4,10 +4,10 @@
   "description": "Сделайте кнопку, поле ввода или любой другой элемент, в котором пользователь вводит цвет в привычном нам css-формате (типа, `#badbad`). Но только цвет должен быть вводить не с клавиатуры, а выбираться через палитру, примерно так:",
   "main": "index.js",
   "scripts": {
-    "build": "rm -rf dist && cp -Ra ./src/. dist && babel src -d dist",
-    "lint": "eslint ./src && stylelint './src/**/*.css'",
-    "lint:fix": "eslint ./src --fix && stylelint './src/**/*.css' --fix",
-    "start": "http-server .",
+    "build": "rm -rf dist && cp -Ra ./src/. dist && cp -Ra ./node_modules/@eastdesire/jscolor/jscolor.js dist && babel src -d dist",
+    "lint": "eslint ./src && stylelint './src/*.css'",
+    "lint:fix": "eslint ./src --fix && stylelint './src/*.css' --fix",
+    "start": "http-server ./dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
