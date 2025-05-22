@@ -8,12 +8,13 @@
 
 Также, добавьте дополнительную кнопку, при клике на которую выбранный цвет будет выводиться в интерфейс (можно что-либо красить этим цветом) или консоль
 
-### How to check
+### How to use
 
 1. Clone
 2. npm install
-3. npm start
-4. go to http://localhost:8080
+3. npm run build
+4. npm start
+5. go to http://localhost:8080
 
 ##
 
